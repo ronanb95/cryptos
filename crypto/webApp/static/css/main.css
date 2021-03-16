@@ -1,0 +1,70 @@
+:root {
+    --black:#0000;
+    --white:#FFFF;
+    --grey:#EDDBC2;
+    --yellow:#FFEF76;
+    --green:#77D59D;
+    --red: #FF3E6C;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+
+/* Main Body */
+
+#main_content{
+    margin: 40px 40px;
+}
+
+/* Tab container */
+
+.tab_section{
+    background-color: var(--grey);
+    color: black;
+    border-radius: 12.5px;
+}
+
+.tab_buttons{
+    margin-top: 20px;
+}
+
+.tablink{
+    background-color: var(--grey);
+    border: none;
+    text-decoration: none;
+}
+
+.active_tab{
+    background-color: var(--green);
+}
+
+hr {
+    border-top: 2px solid var(--green);
+}
+
+.tab_content{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Users tab */
+
+/* Cryptos Tab */
+
+/* Footer */
+
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+}

@@ -1,1 +1,31 @@
-<p>Test</p>
+{% extends "webApp/base.html" %} 
+{% load static %}
+
+{% block content %}
+
+    <div class="row no-gutters">
+        <div class="tab_section col-sm-12 col-md-12 col-lg-12 col-xl-12 nopadding">
+            
+            <div class="tab_buttons">
+                <button class="tablink active_tab" onclick="openTab(event,'users')">Users</button>
+                <button class="tablink" onclick="openTab(event,'markets')">Markets</button>
+            </div>
+
+            <hr>
+            
+            <div class="tab_content">
+                <div id="users" class="tab">
+                    <h2>Users</h2>
+                    <p>Users info will be shown here</p>
+                </div>
+            
+                <div id="markets" class="tab" style="display:none">
+                    <h2>Markets</h2>
+                    <p>The markets table will be shown here</p> 
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock content %}
