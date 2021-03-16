@@ -1,3 +1,12 @@
 from django.db import models
+from django.contrib.auth.models import User
 
-# Create your models here.
+class Profile(models.Model):
+    #Cascade will get rid of record on User deletion
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    #Don't need to add email here, can derive from the user
+    image = models.ImageField(default='default.jpg', upload_to='profile_pics')
+    fav_coin = models.TextField(max_length=4, default="BTC")
+
+    def __str__(self):
+        return f'{self.user.username} Profile'
