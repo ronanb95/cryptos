@@ -1,6 +1,8 @@
 # cryptos
 
-Hey there, welcome to my submission for the Crypto tracker assignment. I will now breakdown some of the decisions I took whilst working on this application. If you would like to skip to the instructions on how to install and run the application you can find them towards the bottom of this README. 
+Hey there, welcome to my submission for the Crypto tracker assignment. I will now breakdown some of the decisions I took whilst working on this application. 
+
+If you would like to skip to the instructions on how to install and run the application you can find them towards the bottom of this README. 
 
 ## Workflow Overview
 
@@ -10,12 +12,20 @@ Generally speaking I broke the development process into two main parts, a part f
 
 ## Customers Cards 
 
-I began by setting up a basic skeleton app, then added some basic templates with some css to get an idea of where everything would fit. I then began working on the backend functionality for the customers content cards. Once the backend functionality was complete I focused on styling the section.
+I began by setting up a basic skeleton app, then added some basic templates with some css to get an idea of where everything would fit. I then began working on the backend functionality for the customers content cards. I created a Profile model and created a one-to-one relationship with the Users model here (This was probably incorrect, I was originally under the impression that each content card should represent a user of the application). I then created a serializer to get data from this model and overrode a couple of functions to get the desired information. I finally created an endpoint using the REST frameworks generic views that the frontend could fetch from. 
+
+In terms of the frontend I kept things simple. I considered using something like React but given the tight timeframe I did not want to be messing around with webpack and having additional set up etc. Therefore I simply used some JQuery, Bootstrap, HTML and CSS. For the content cards I simply fetched the data from the endpoint I created and displayed it using some standard javascript. Finally, I added some styling through CSS.  
 
 
 ## Market Table
 
-I followed a similar approach for the market table. I first worked on the backend, 
+I followed a similar approach for the market table. I first worked on the backend then switched to the frontend. I began by creating a view that was responsible for fetching the data from an API (I used coingecko). I then hooked this view up to an endpoint that was capable of sending JSON to the frontend. I once again used the REST Framework here.
+
+One thing that I would like to note here is that if there were many concurrent users using the application this approach would like cause the server to be banned by the API provider. I would have create a function that would run every 2 minutes, maybe using a package like celery or by having a file on the server, and this would get data from coingecko and store it in a database. Users could then retrieve data from our database instead of forcing a request to the coingecko API. However, the spec indicated that I shouldn't save the data to a database so I chose this approach.  
+
+I chose to use Ajax on the frontend in order to auto update the market table. Once a user refreshes the page the frontend will send a GET request to the endpoint responsible for supplying the frontend with data. A timer is then started using 'setInterval' to repeat this process every two minutes. The table is then automatically updated with the new figures provided bt the API. I also included a refresh button that users can use to update the table at their leisure. 
+
+In terms of styling I kept everything very simple.
 
 ## Installation
 
