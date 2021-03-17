@@ -15,17 +15,8 @@
             
             <div class="tab_content">
                 <div id="users" class="tab">
-                    <h2>Users</h2>
-                    <div id="cards">
-                        
-                        <div class="user_card">
-                            <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
-                            <div>
-                                <h4 class="account-heading">{{ user.username }}</h4>
-                                <p>{{ user.email }}</p>
-                            </div>
-                        </div>
-
+                    <div class="row d-flex justify-content-center" id="card_section">
+                        <!-- User profiles imported in JS go here -->
                     </div>
                 </div>
             
@@ -37,5 +28,6 @@
 
         </div>
     </div>
+
 
 {% endblock content %}
