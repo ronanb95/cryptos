@@ -34,3 +34,14 @@ python manage.py runserver
 ```
 
 Navigate to localhost:8000 to view site locally
+
+## Testing
+
+Whilst in the base dir which contains manage.py tests can be run by typing the following:
+
+```bash
+python manage.py test webApp
+```
+
+By no means in depth, I have included a couple of unit tests to test some basic functionality of the application. Due to the time constraints I was unable to more in depth testing. 
+
