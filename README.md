@@ -31,7 +31,7 @@ In terms of styling I kept everything very simple.
 
 Pull the code from this repository by whatever means you prefer.
 
-Then nativate into the base dir:
+Then navigate into the base dir:
 
 ```bash
 cd crypto
