@@ -1,6 +1,21 @@
 # cryptos
 
-Hey there, welcome to my submission for the Crypto tracker assignment. 
+Hey there, welcome to my submission for the Crypto tracker assignment. I will now breakdown some of the decisions I took whilst working on this application. If you would like to skip to the instructions on how to install and run the application you can find them towards the bottom of this README. 
+
+## Workflow Overview
+
+I have attempted to document my workflow as clearly as possible. I have broken the process down into steps, each of which was performed in order and then pushed to this repository. Between some of these steps I performed some unit tests to make sure I hadn't done anything terrible. If I had a little more time I might have followed a more Test Driven Development approach. If you would like to see these steps you can check the commit history and you should be able to clearly see the steps I took in order. 
+
+Generally speaking I broke the development process into two main parts, a part focusing on the creation of the customer content cards and a part focusing on the market table.
+
+## Customers Cards 
+
+I began by setting up a basic skeleton app, then added some basic templates with some css to get an idea of where everything would fit. I then began working on the backend functionality for the customers content cards. Once the backend functionality was complete I focused on styling the section.
+
+
+## Market Table
+
+I followed a similar approach for the market table. I first worked on the backend, 
 
 ## Installation
 
@@ -43,5 +58,5 @@ Whilst in the base dir which contains manage.py tests can be run by typing the f
 python manage.py test webApp
 ```
 
-By no means in depth, I have included a couple of unit tests to test some basic functionality of the application. Due to the time constraints I was unable to more in depth testing. 
+By no means in depth, I have included a couple of unit tests to test some basic functionality of the application. Due to the time constraints I was unable to perform more in depth testing. 
 
