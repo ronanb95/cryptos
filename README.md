@@ -4,6 +4,10 @@ Hey there, welcome to my submission for the Crypto tracker assignment.
 
 ## Installation
 
+Pull the code from this repository by whatever means you prefer.
+
+Then nativate into the base dir:
+
 ```bash
 cd crypto
 ```
