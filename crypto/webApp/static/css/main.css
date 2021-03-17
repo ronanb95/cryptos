@@ -73,7 +73,7 @@ hr {
 }
 
 .card-container .round {
-	border: 1px solid var(--red);
+	/* border: 1px solid var(--red); */
 	border-radius: 50%;
 	padding: 7px;
     margin-bottom: 15px;
@@ -116,6 +116,30 @@ hr {
 
 table{
     width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#refresh_btn{
+    background-color: var(--grey);
+    border: 1px solid var(--grey);
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+thead{
+    border: 1px solid var(--purple);
+    border-radius: 12.5px;
+    margin-bottom: 10px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even){
+    background-color: black;
 }
 
 .coin_image{
@@ -130,8 +154,12 @@ table{
     background-color: var(--red);
 }
 
-.price_change{
+.red{
+    color: var(--red);
+}
 
+.green{
+    color: var(--green);
 }
 
 /* Footer */
