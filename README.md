@@ -58,7 +58,14 @@ To run the app:
 python manage.py runserver
 ```
 
-Navigate to localhost:8000 to view site locally
+Navigate to localhost:8000 to view site locally.
+
+If CSS doe not load correctly a hard refresh should do the trick. This can be done on chrome with:
+
+```bash
+ctrl + shift + R
+```
+
 
 ## Testing
 
