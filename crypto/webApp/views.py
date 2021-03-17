@@ -21,7 +21,7 @@ class ProfileListCreate(generics.ListAPIView):
 
 # Gets realtime data
 # Obviously cause issues with multiple concurrent users
-# Possible Solution: Log this data to database every 5 minutes or so and retrieve from there 
+# Possible Solution: Log this data to database every 2 minutes or so and retrieve from there 
 class RealTimeInfoView(generics.RetrieveAPIView):
     
     queryset=''

@@ -1,10 +1,10 @@
 :root {
     --black:#0000;
     --white:#FFFF;
-    --grey:#28223F;
-    --yellow:#FFEF76;
+    --grey:#222222;
     --green:#77D59D;
-    --red: #FF3E6C;
+    --red: #E9565C;
+    --purple: #8646B0;
 }
 
 html {
@@ -59,9 +59,9 @@ hr {
 /* Users tab */
 
 .card-container {
-	background-color: #231E39;
+	background-color: #2D2C2B;
 	border-radius: 12.5px;
-    border: 2px solid var(--green);
+    border: 2px solid var(--purple);
 	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
 	color: white;
 	padding-top: 30px;
@@ -73,7 +73,7 @@ hr {
 }
 
 .card-container .round {
-	border: 1px solid #03BFCB;
+	border: 1px solid var(--red);
 	border-radius: 50%;
 	padding: 7px;
     margin-bottom: 15px;
@@ -85,11 +85,12 @@ hr {
 }
 
 .information {
-	background-color: #1F1A36;
+	background-color: var(--grey);
 	text-align: left;
 	padding: 15px;
 	margin-top: 30px;
     margin-bottom: 10px;
+    border: 2px solid var(--purple);
 }
 
 .information h6{
@@ -111,9 +112,27 @@ hr {
 	padding: 7px;
 }
 
+/* Markets Tab */
 
+table{
+    width: 100%;
+}
 
-/* Cryptos Tab */
+.coin_image{
+    height: 20px;
+}
+
+.odd {
+    background-color: var(--black);
+}
+
+.even {
+    background-color: var(--red);
+}
+
+.price_change{
+
+}
 
 /* Footer */
 

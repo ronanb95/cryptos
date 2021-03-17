@@ -18,10 +18,16 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 
-    <!-- Custom JS -->
-    <script type="text/javascript" src="{% static 'js/user_profiles.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/tabs.js' %}"></script>
-    
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Datatable related -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+
+    <!-- Custom JS at bottom of body -->
+
+
     {% if title %}
         <title>Ronan Byrne | {{ title }}</title>
     {% else %}
@@ -68,6 +74,10 @@
         </div>
     </footer>
 
+    <!-- Custom JS -->
+    <script type="text/javascript" src="{% static 'js/user_profiles.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/tabs.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/currency_data.js' %}"></script>
 </body>
 </html>
 
