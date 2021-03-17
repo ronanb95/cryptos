@@ -7,7 +7,7 @@ fetch("api/profiles")
     let card_section = document.getElementById('card_section');
     updatedHTML = "";
     data.forEach(profile => {
-        card = '<div class="card-container">'+
+        card = '<div class="card-container ">'+
                     '<img class="round" src=' + profile.image + ' alt="user" />'+
                     '<h3>' + profile.user + '</h3>'+
                     '<div class="information">'+
