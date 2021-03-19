@@ -10,12 +10,13 @@ I have attempted to document my workflow as clearly as possible. I have broken t
 
 Generally speaking I broke the development process into two main parts, a part focusing on the creation of the customer content cards and a part focusing on the market table.
 
+One additional thing to note here is that I bundled both the user/customers section of the app and the market section of the app together as the scope of this app was definitive and quite small. However, I do realise that generally when working on Django projects it is best to work in a manner in which services are broken up into different apps. For example, having a separate Customer app and separate Market app within the same project. This would aid with reusability.
+
 ## Customers Cards 
 
 I began by setting up a basic skeleton app, then added some basic templates with some css to get an idea of where everything would fit. I then began working on the backend functionality for the customers content cards. I created a Profile model and created a one-to-one relationship with the Users model here (This was probably incorrect, I was originally under the impression that each content card should represent a user of the application). I then created a serializer to get data from this model and overrode a couple of functions to get the desired information. I finally created an endpoint using the REST frameworks generic views that the frontend could fetch from. 
 
 In terms of the frontend I kept things simple. I considered using something like React but given the tight timeframe I did not want to be messing around with webpack and having additional set up etc. Therefore I simply used some JQuery, Bootstrap, HTML and CSS. For the content cards I simply fetched the data from the endpoint I created and displayed it using some standard javascript. Finally, I added some styling through CSS.  
-
 
 ## Market Table
 
